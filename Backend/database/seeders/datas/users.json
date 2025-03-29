@@ -1,0 +1,29 @@
+[
+    {
+        "Username": "Zsozso",
+        "email": "gortler.zsolt@gmail.com",
+        "password": "Zsolti",
+        "FullName": "Gortler Zsolt",
+        "PhoneNumber": "+36205490150",
+        "email_verified_at": "2025-02-28 00:00:00",
+        "role": "admin"
+    },
+    {
+        "Username": "Gandalfiki",
+        "email": "k955658@gmail.com",
+        "password": "Troger860",
+        "FullName": "Szaniszlo Balint",
+        "PhoneNumber": "+36205029699",
+        "email_verified_at": "2025-02-28 00:00:00",
+        "role": "admin"
+    },
+    {
+        "Username": "Tesztelő",
+        "email":"vizsgaremek@outlook.com",
+        "password":"vizsga123",
+        "FullName":"Teszt Elek",
+        "PhoneNumber":"+36205490434",
+        "email_verified_at":"2025-02-28 00:00:00",
+        "role":"admin"
+    }
+]
