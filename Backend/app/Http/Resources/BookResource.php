@@ -23,7 +23,7 @@ class BookResource extends JsonResource
             'price' => $this->price,
             'describe' => $this->describe,
             'cover_image' => $this->cover_image,
-            'categories' => $this->collection($this->whenLoaded('categories'))
+            'categories' => CategoryResource::collection($this->categories),
         ];
     }
 }
