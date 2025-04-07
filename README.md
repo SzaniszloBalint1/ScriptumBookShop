@@ -4,7 +4,7 @@
 - cd Backend (be kell lépni a backend mappájába).
 - Composer install: Evvel létrejön a vendor mappa, amely szükséges a projekt elindításához és működéséhez.
 - Ha nincs elindítva, akkor el kell indítani a XAMPP-ot, hogy a következő lépések sikeren letudjanak futni, illetve élővé váljon a lokális szerverünk.
-- php artisan migrate: Létrejött az adatbázist, illetve a táblázatokat és az oszlopokat.
+- php artisan migrate: Létrejött az adatbázis, illetve a táblázatok és azok oszlopai.
 - php artisan db:seed: A seederek tartalmát az adott táblákba betölti, innentől kezdve lesz adat az adatbázisban, amivel lehet dolgozni.
 - php artisan serve: Elindul a server, innentől kezdve már nem kell vele foglalkozni, következhet a frontend elindítása.
 
