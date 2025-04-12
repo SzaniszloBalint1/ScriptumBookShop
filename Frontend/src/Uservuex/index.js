@@ -1,23 +1,26 @@
+import actions from "./actions";
+import getters from "./getters";
+import mutations from "./mutations";
+
+
+
 export default {
-        user(state){
-            return state.user;
-        },
-        hasuser(state){
-            return !!state.user;   
-        },
-        users(state) {
-            return state.users;
-          },
-        userId(state){
-            return state.userId;
-        },
-        role(state){
-            return state.user ? state.user.role : null;
-        },
-        emailStatus(state) {
-            return state.emailStatus;
-        },
-        email(state) {
-            return state.email;
-        },
+    namespaced:true,
+    state(){
+        return{
+            user:null,
+            token:null,
+            isAuth:false,
+            users:[],
+            userId:null,
+            email:null,
+            emailStatus: {
+                status: null,
+                message: null
+            },
+        }
+    },
+    actions,
+    getters,
+    mutations
 }
