@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('payments', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('order_id')->constrained('orders');
+             $table->foreignId('order_id')->constrained('orders')->onDelete('cascade');
             $table->foreignId('paymentmethod_id')->constrained('payment_methods');
             $table->date('PaymentDate');
             $table->timestamps();
