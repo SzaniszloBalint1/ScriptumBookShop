@@ -1,5 +1,5 @@
 import { createStore } from "vuex";
-import Booksvuex from "./Booksvuex";
+import Booksvuex from "./Bookvuex";
 import CartVuex from "./CartVuex";
 import Uservuex from "./Uservuex";
 import CategoryVuex from "./CategoryVuex";
