@@ -1,5 +1,7 @@
 # Telepítés dokumentáció
-
+- Görtler Zsolt
+- Szaniszló Bálint
+  
 ## Backend 
 - cd Backend (be kell lépni a backend mappájába).
 - Composer install: Evvel létrejön a vendor mappa, amely szükséges a projekt elindításához és működéséhez.
