@@ -7,7 +7,6 @@
     <div class="container mt-5">
       <h1 class="m-5">Felhasználók listája</h1>
       
-      <!-- Asztali és tablet nézet -->
       <div class="table-responsive d-none d-md-block">
         <table class="table table-striped table-hover table-bordered">
           <thead>
@@ -37,7 +36,6 @@
         </table>
       </div>
       
-      <!-- Mobil nézet kártyákkal -->
       <div class="user-cards d-md-none">
         <div class="user-card" v-for="user in users" :key="user.id">
           <div class="card-header">
