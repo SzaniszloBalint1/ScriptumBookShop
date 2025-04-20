@@ -16,9 +16,9 @@ const UserSettings = () => import("./Admin/UserSettings.vue");
 const RoleSettings = () => import("./Admin/RoleSettings.vue");
 const Email = () => import("./components/PasswordReset/Email.vue");
 const ResetPassword = () => import("./components/PasswordReset/ResetPassword.vue");
-const UserDataSettings = () => import("./components/UserDataSettings.vue");
+const UserDataSettings = () => import("./components/UserDatas/UserDataSettings.vue");
 const UserDatas = () => import("./components/Purchase/UserDatas.vue");
-const UserOrderDatas=()=>import("./components/UserOrderDatas.vue");
+const UserOrderDatas=()=>import("./components/UserDatas/UserOrderDatas.vue");
 
 const router = createRouter({
     history: createWebHistory(),
