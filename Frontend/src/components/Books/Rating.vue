@@ -52,7 +52,7 @@
       },
       methods: {
           async rateBook(rating) {
-              // Ellenőrizzük, hogy a felhasználó be van-e jelentkezve
+              
               if (!this.isLoggedIn) {
                   this.message = 'Az értékeléshez be kell jelentkezned!';
                   this.messageType = 'error';
@@ -62,7 +62,7 @@
                   return;
               }
               
-              // Ha már értékelte, ne engedjük újraértékelni
+           
               if (this.alreadyRated) {
                   this.message = 'Ezt a könyvet már értékelted!';
                   this.messageType = 'warning';
@@ -72,7 +72,7 @@
                   return;
               }
               
-              // Értékelés küldése a szervernek
+          
               try {
                   const userId = this.$store.getters['user/user'].id;
                   await this.$store.dispatch('rating/addRating', {
@@ -84,7 +84,7 @@
                   this.message = 'Sikeres értékelés!';
                   this.messageType = 'success';
                   
-                  // Frissítjük a könyv értékelési adatait
+                  
                   this.$store.dispatch('rating/getBookRatings', this.bookId);
               } catch (error) {
                   this.message = error.response?.data?.message || 'Hiba történt az értékelés során!';
@@ -97,10 +97,10 @@
           }
       },
       mounted() {
-          // Könyv értékeléseinek lekérése
+     
           this.$store.dispatch('rating/getBookRatings', this.bookId);
           
-          // Felhasználó értékeléseinek lekérése
+         
           if (this.isLoggedIn) {
               this.$store.dispatch('rating/getUserRatings');
           }
