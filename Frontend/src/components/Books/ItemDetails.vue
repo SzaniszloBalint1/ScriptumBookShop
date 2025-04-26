@@ -33,6 +33,7 @@
 
       <AuthorOtherBooks 
   v-if="book"
+    :key=book.id
   :author="book.author" 
   :currentBookId="book.id"
 ></AuthorOtherBooks>
