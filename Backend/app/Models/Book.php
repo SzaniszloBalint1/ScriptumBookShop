@@ -53,4 +53,9 @@ public function getRatingStats()
         ]
     ];
 }
+
+      public function users()
+    {
+        return $this->belongsToMany(User::class);
+    }
 }
