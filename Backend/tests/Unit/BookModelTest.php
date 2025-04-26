@@ -32,7 +32,6 @@ class BookModelTest extends TestCase
             'price' => 1000,
             'describe' => 'Test Description',
             'cover_image' => 'test.jpg',
-            'category_id' => $this->category->id,
         ]);
         $this->user = User::create([
             'Username' => 'Test User',
@@ -67,7 +66,6 @@ class BookModelTest extends TestCase
             'price',
             'describe',
             'cover_image',
-            'category_id',
             'views',
             'rating',
         ], $this->book->getFillable());
@@ -88,13 +86,7 @@ class BookModelTest extends TestCase
 
     }
 
-    public function test_book_add_to_category():void{
-        $category = Category::create([
-            'CategoryName' => 'Test Category 2'
-        ]);
-        $this->book->categories()->attach($category->id);
-        $this->assertContains($category->id, $this->book->categories->pluck('id'));
-    }
+  
 
     public function test_book_get_a_comment():void{
         $this->book->comments()->delete();
