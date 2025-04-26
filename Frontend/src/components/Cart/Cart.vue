@@ -71,17 +71,11 @@ export default {
         hasCart(){
             return this.$store.getters['cart/hascart'];
         },
-        getTotalCart(){
-      return this.$store.getters['cart/totalCart'];
-    },
     getTotalSum(){
         return this.$store.getters['cart/totalSum'];
     }
     },
     methods:{
-        getBooksId(){
-                this.$store.dispatch('book/getDataId',item);
-            },
         addItemToTheCart(item){
             return this.$store.commit('cart/addItemToCart',item);
         },
