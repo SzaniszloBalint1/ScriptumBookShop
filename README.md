@@ -4,14 +4,19 @@
 - Görtler Zsolt
 - Szaniszló Bálint
 
-## Tesztelő belépés
-- Email: vizsgaremek@outlook.com
+## Tesztelő belépés a weboldalon
+- Email: vizsgaremek13@outlook.hu
 - Jelszó: vizsga123
+### Tesztelő belépése az outlook fiókba
+- Email:vizsgaremek13@outlook.hu
+- Jelszó: vizsga123 vagy Vizsga123
+  
 ## Projekt felépítése
 - `Backend/` - A szerveroldali alkalmazás (Laravel alapú).
 - `Frontend/` - A kliensoldali alkalmazás (Vue alapú).
 - `bookshop.sql` - Az adatbázis dump fájl (MySQL).
 - `Dokumentumok/` - Tartalmazza az alkalmazás dokumentációját docx és pdf formátumban
+
 ## Telepítési útmutató
 
 ### Backend
