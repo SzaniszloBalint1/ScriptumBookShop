@@ -4,6 +4,9 @@
 - Görtler Zsolt
 - Szaniszló Bálint
 
+## Tesztelő belépés
+- Email: vizsgaremek@outlook.com
+- Jelszó: vizsga123
 ## Projekt felépítése
 - `Backend/` - A szerveroldali alkalmazás (Laravel alapú).
 - `Frontend/` - A kliensoldali alkalmazás (Vue alapú).
