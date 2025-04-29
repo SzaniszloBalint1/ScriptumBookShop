@@ -8,7 +8,7 @@
 - `Backend/` - A szerveroldali alkalmazás (Laravel alapú).
 - `Frontend/` - A kliensoldali alkalmazás (Vue alapú).
 - `bookshop.sql` - Az adatbázis dump fájl (MySQL).
-
+- `Dokumentumok/` - Tartalmazza az alkalmazás dokumentáciját docx és pdf formátumban
 ## Telepítési útmutató
 
 ### Backend
